@@ -128,14 +128,16 @@ var getInteractions = function(drugs,cardCallback,responseCallback) {
     codes.push(drugs[x][0]);
   }
   var api = 'http://rxnav.nlm.nih.gov/REST/interaction/list.json?rxcuis='+codes.join('+');
-  http.get({
-    host: 'gatekeeper.mitre.org',
-    port: 80,
-    path: api,
-    headers: {
-      Host: 'rxnav.nlm.nih.gov'
-    }
-  }, function(res) {
+  http.get(
+  // {
+  //   host: 'gatekeeper.mitre.org',
+  //   port: 80,
+  //   path: api,
+  //   headers: {
+  //     Host: 'rxnav.nlm.nih.gov'
+  //   }
+  // }
+  api , function(res) {
     var body = '';
     res.on('data', function (data) {
         body += data;
