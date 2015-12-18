@@ -26,6 +26,10 @@ Post the contents of `sample.request.json` to `http://localhost:3001`
 
       curl -i -X POST -d @sample.request.json http://localhost:3001
 
+## Demonstration on AWS Lambda
+
+      curl -i -X POST -d @sample.request.json https://d1fwjs99ve.execute-api.us-east-1.amazonaws.com/prod/drug-interaction-cds-hook
+
 ## License
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this software except in compliance with the License.

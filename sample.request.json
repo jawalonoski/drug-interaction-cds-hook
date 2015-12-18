@@ -424,14 +424,24 @@
           }
         ],
         "medicationCodeableConcept": {
-          "text": "doxylamine succinate 25 MG Oral Tablet [Unisom]",
+          "text": "Aspirin 65 MG Oral Tablet",
           "coding": [
             {
-              "display": "doxylamine succinate 25 MG Oral Tablet [Unisom]",
+              "display": "Aspirin 65 MG Oral Tablet",
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "1101448"
+              "code": "243663"
             }
           ]
+        },
+        "reasonCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "1201005",
+              "display": "Benign essential hypertension"
+            }
+          ],
+          "text": "Benign essential hypertension"
         }
       }
     }
