@@ -1,0 +1,439 @@
+{
+  "resourceType": "Parameters",
+  "parameter": [
+    {
+      "name": "activity",
+      "valueCoding": {
+        "system": "http://cds-hooks.smarthealthit.org/activity",
+        "code": "medication-prescribe"
+      }
+    },
+    {
+      "name": "activityInstance",
+      "valueString": "85b5d7d5-f232-4b39-98c9-02f067496c76"
+    },
+    {
+      "name": "fhirServer",
+      "valueUri": "http://hooks.smarthealthit.org:9080"
+    },
+    {
+      "name": "redirect",
+      "valueString": "http://hooks.fhir.me/service-done.html"
+    },
+    {
+      "name": "user",
+      "valueString": "Practitioner/example"
+    },
+    {
+      "name": "patient",
+      "valueId": "1288992"
+    },
+    {
+      "name": "preFetchData",
+      "resource": {
+        "resourceType": "Bundle",
+        "type": "transaction-response",
+        "entry": [
+          {
+            "resource": {
+              "resourceType": "Bundle",
+              "type": "searchset",
+              "total": 5,
+              "link": [
+                {
+                  "relation": "self",
+                  "url": "http://hooks.smarthealthit.org:9080/?"
+                }
+              ],
+              "entry": [
+                {
+                  "fullUrl": "http://hooks.smarthealthit.org:9080/MedicationOrder/139",
+                  "resource": {
+                    "resourceType": "MedicationOrder",
+                    "id": "139",
+                    "meta": {
+                      "versionId": "98649",
+                      "lastUpdated": "2015-09-16T18:13:10.929-05:00"
+                    },
+                    "text": {
+                      "status": "generated",
+                      "div": "<div>\n      Lisinopril 20 MG Oral Tablet (rxnorm: 314077)\n    </div>"
+                    },
+                    "status": "active",
+                    "patient": {
+                      "reference": "Patient/1288992"
+                    },
+                    "medicationCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                          "code": "314077",
+                          "display": "Lisinopril 20 MG Oral Tablet"
+                        }
+                      ],
+                      "text": "Lisinopril 20 MG Oral Tablet"
+                    },
+                    "dosageInstruction": [
+                      {
+                        "text": "1 daily",
+                        "timing": {
+                          "repeat": {
+                            "boundsPeriod": {
+                              "start": "2008-08-13"
+                            },
+                            "frequency": 1,
+                            "period": 1,
+                            "periodUnits": "d"
+                          }
+                        },
+                        "doseQuantity": {
+                          "value": 1,
+                          "unit": "{tablet}",
+                          "system": "http://unitsofmeasure.org",
+                          "code": "{tablet}"
+                        }
+                      }
+                    ],
+                    "dispenseRequest": {
+                      "numberOfRepeatsAllowed": 1,
+                      "quantity": {
+                        "value": 90,
+                        "unit": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                      },
+                      "expectedSupplyDuration": {
+                        "value": 90,
+                        "unit": "days",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                      }
+                    }
+                  },
+                  "search": {
+                    "mode": "match"
+                  }
+                },
+                {
+                  "fullUrl": "http://hooks.smarthealthit.org:9080/MedicationOrder/140",
+                  "resource": {
+                    "resourceType": "MedicationOrder",
+                    "id": "140",
+                    "meta": {
+                      "versionId": "98695",
+                      "lastUpdated": "2015-09-16T18:13:11.078-05:00"
+                    },
+                    "text": {
+                      "status": "generated",
+                      "div": "<div>\n      Memantine 10 MG Oral Tablet [Namenda] (rxnorm: 404673)\n    </div>"
+                    },
+                    "status": "active",
+                    "patient": {
+                      "reference": "Patient/1288992"
+                    },
+                    "medicationCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                          "code": "404673",
+                          "display": "Memantine 10 MG Oral Tablet [Namenda]"
+                        }
+                      ],
+                      "text": "Memantine 10 MG Oral Tablet [Namenda]"
+                    },
+                    "dosageInstruction": [
+                      {
+                        "text": "1 bid",
+                        "timing": {
+                          "repeat": {
+                            "boundsPeriod": {
+                              "start": "2008-08-13"
+                            },
+                            "frequency": 2,
+                            "period": 1,
+                            "periodUnits": "d"
+                          }
+                        },
+                        "doseQuantity": {
+                          "value": 1,
+                          "unit": "{tablet}",
+                          "system": "http://unitsofmeasure.org",
+                          "code": "{tablet}"
+                        }
+                      }
+                    ],
+                    "dispenseRequest": {
+                      "numberOfRepeatsAllowed": 1,
+                      "quantity": {
+                        "value": 180,
+                        "unit": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                      },
+                      "expectedSupplyDuration": {
+                        "value": 90,
+                        "unit": "days",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                      }
+                    }
+                  },
+                  "search": {
+                    "mode": "match"
+                  }
+                },
+                {
+                  "fullUrl": "http://hooks.smarthealthit.org:9080/MedicationOrder/141",
+                  "resource": {
+                    "resourceType": "MedicationOrder",
+                    "id": "141",
+                    "meta": {
+                      "versionId": "98733",
+                      "lastUpdated": "2015-09-16T18:13:11.204-05:00"
+                    },
+                    "text": {
+                      "status": "generated",
+                      "div": "<div>\n      donepezil 10 MG Oral Tablet [Aricept] (rxnorm: 153357)\n    </div>"
+                    },
+                    "status": "active",
+                    "patient": {
+                      "reference": "Patient/1288992"
+                    },
+                    "medicationCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                          "code": "153357",
+                          "display": "donepezil 10 MG Oral Tablet [Aricept]"
+                        }
+                      ],
+                      "text": "donepezil 10 MG Oral Tablet [Aricept]"
+                    },
+                    "dosageInstruction": [
+                      {
+                        "text": "1 qhs",
+                        "timing": {
+                          "repeat": {
+                            "boundsPeriod": {
+                              "start": "2008-08-14"
+                            },
+                            "frequency": 1,
+                            "period": 1,
+                            "periodUnits": "d"
+                          }
+                        },
+                        "doseQuantity": {
+                          "value": 1,
+                          "unit": "{tablet}",
+                          "system": "http://unitsofmeasure.org",
+                          "code": "{tablet}"
+                        }
+                      }
+                    ],
+                    "dispenseRequest": {
+                      "numberOfRepeatsAllowed": 1,
+                      "quantity": {
+                        "value": 90,
+                        "unit": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                      },
+                      "expectedSupplyDuration": {
+                        "value": 90,
+                        "unit": "days",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                      }
+                    }
+                  },
+                  "search": {
+                    "mode": "match"
+                  }
+                },
+                {
+                  "fullUrl": "http://hooks.smarthealthit.org:9080/MedicationOrder/142",
+                  "resource": {
+                    "resourceType": "MedicationOrder",
+                    "id": "142",
+                    "meta": {
+                      "versionId": "98779",
+                      "lastUpdated": "2015-09-16T18:13:11.356-05:00"
+                    },
+                    "text": {
+                      "status": "generated",
+                      "div": "<div>\n      Hydrochlorothiazide 50 MG Oral Tablet (rxnorm: 197770)\n    </div>"
+                    },
+                    "status": "active",
+                    "patient": {
+                      "reference": "Patient/1288992"
+                    },
+                    "medicationCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                          "code": "197770",
+                          "display": "Hydrochlorothiazide 50 MG Oral Tablet"
+                        }
+                      ],
+                      "text": "Hydrochlorothiazide 50 MG Oral Tablet"
+                    },
+                    "dosageInstruction": [
+                      {
+                        "text": "1 daily",
+                        "timing": {
+                          "repeat": {
+                            "boundsPeriod": {
+                              "start": "2008-08-14"
+                            },
+                            "frequency": 1,
+                            "period": 1,
+                            "periodUnits": "d"
+                          }
+                        },
+                        "doseQuantity": {
+                          "value": 1,
+                          "unit": "{tablet}",
+                          "system": "http://unitsofmeasure.org",
+                          "code": "{tablet}"
+                        }
+                      }
+                    ],
+                    "dispenseRequest": {
+                      "numberOfRepeatsAllowed": 1,
+                      "quantity": {
+                        "value": 90,
+                        "unit": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                      },
+                      "expectedSupplyDuration": {
+                        "value": 90,
+                        "unit": "days",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                      }
+                    }
+                  },
+                  "search": {
+                    "mode": "match"
+                  }
+                },
+                {
+                  "fullUrl": "http://hooks.smarthealthit.org:9080/MedicationOrder/143",
+                  "resource": {
+                    "resourceType": "MedicationOrder",
+                    "id": "143",
+                    "meta": {
+                      "versionId": "98825",
+                      "lastUpdated": "2015-09-16T18:13:11.505-05:00"
+                    },
+                    "text": {
+                      "status": "generated",
+                      "div": "<div>\n      potassium citrate 10 MEQ Extended Release Tablet (rxnorm: 199381)\n    </div>"
+                    },
+                    "status": "active",
+                    "patient": {
+                      "reference": "Patient/1288992"
+                    },
+                    "medicationCodeableConcept": {
+                      "coding": [
+                        {
+                          "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+                          "code": "199381",
+                          "display": "potassium citrate 10 MEQ Extended Release Tablet"
+                        }
+                      ],
+                      "text": "potassium citrate 10 MEQ Extended Release Tablet"
+                    },
+                    "dosageInstruction": [
+                      {
+                        "text": "1 daily",
+                        "timing": {
+                          "repeat": {
+                            "boundsPeriod": {
+                              "start": "2008-09-30"
+                            },
+                            "frequency": 1,
+                            "period": 1,
+                            "periodUnits": "d"
+                          }
+                        },
+                        "doseQuantity": {
+                          "value": 1,
+                          "unit": "{tablet}",
+                          "system": "http://unitsofmeasure.org",
+                          "code": "{tablet}"
+                        }
+                      }
+                    ],
+                    "dispenseRequest": {
+                      "numberOfRepeatsAllowed": 1,
+                      "quantity": {
+                        "value": 200,
+                        "unit": "{tablet}",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "{tablet}"
+                      },
+                      "expectedSupplyDuration": {
+                        "value": 90,
+                        "unit": "days",
+                        "system": "http://unitsofmeasure.org",
+                        "code": "d"
+                      }
+                    }
+                  },
+                  "search": {
+                    "mode": "match"
+                  }
+                }
+              ]
+            },
+            "response": {
+              "status": "200 OK"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "context",
+      "resource": {
+        "resourceType": "MedicationOrder",
+        "startDate": "2015-12-18",
+        "endDate": "2016-01-18",
+        "status": "draft",
+        "patient": {
+          "reference": "Patient/1288992"
+        },
+        "dosageInstruction": [
+          {
+            "doseQuantity": {
+              "value": 1,
+              "system": "http://unitsofmeasure.org",
+              "code": "{pill}"
+            },
+            "timing": [
+              {
+                "repeat": {
+                  "frequency": 1,
+                  "period": 1,
+                  "periodUnits": "d"
+                }
+              }
+            ]
+          }
+        ],
+        "medicationCodeableConcept": {
+          "text": "doxylamine succinate 25 MG Oral Tablet [Unisom]",
+          "coding": [
+            {
+              "display": "doxylamine succinate 25 MG Oral Tablet [Unisom]",
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "1101448"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "nlmDisclaimer": "It is not the intention of NLM to provide specific medical advice, but rather to provide users with information to better understand their health and their medications. NLM urges you to consult with a qualified physician for advice about medications.",
+  "userInput": {
+    "sources": [
+      ""
+    ],
+    "rxcuis": [
+      "314077",
+      "404673",
+      "153357",
+      "197770",
+      "199381",
+      "198467"
+    ]
+  },
+  "fullInteractionTypeGroup": [
+    {
+      "sourceDisclaimer": "The content of DrugBank is intended for educational and scientific research purposes only. It is notintended as a substitute for professional medical advice, diagnosis or treatment.[www.drugbank.ca]",
+      "sourceName": "DrugBank",
+      "fullInteractionType": [
+        {
+          "comment": "Drug1 (rxcui = 198467, name = Aspirin 325 MG Delayed Release Oral Tablet, tty = SCD). Drug2 (rxcui = 314077, name = Lisinopril 20 MG Oral Tablet, tty = SCD). Drug1 is resolved to Aspirin, Drug2 is resolved to Lisinopril and interaction asserted in DrugBank between Acetylsalicylic acid and Lisinopril. Drug1 is resolved to Aspirin, Drug2 is resolved to Lisinopril Anhydrous and interaction asserted in DrugBank between Acetylsalicylic acid and Lisinopril.",
+          "minConcept": [
+            {
+              "rxcui": "198467",
+              "name": "Aspirin 325 MG Delayed Release Oral Tablet",
+              "tty": "SCD"
+            },
+            {
+              "rxcui": "314077",
+              "name": "Lisinopril 20 MG Oral Tablet",
+              "tty": "SCD"
+            }
+          ],
+          "interactionPair": [
+            {
+              "interactionConcept": [
+                {
+                  "minConceptItem": {
+                    "rxcui": "1191",
+                    "name": "Aspirin",
+                    "tty": "IN"
+                  },
+                  "sourceConceptItem": {
+                    "id": "DB00945,APRD00264,EXPT00475",
+                    "name": "Acetylsalicylic acid",
+                    "url": "http://www.drugbank.ca/drugs/DB00945#interactions"
+                  }
+                },
+                {
+                  "minConceptItem": {
+                    "rxcui": "29046",
+                    "name": "Lisinopril",
+                    "tty": "IN"
+                  },
+                  "sourceConceptItem": {
+                    "id": "DB00722,APRD00560",
+                    "name": "Lisinopril",
+                    "url": "http://www.drugbank.ca/drugs/DB00722#interactions"
+                  }
+                }
+              ],
+              "severity": "N/A",
+              "description": "May diminish the antihypertensive effect of ACE Inhibitors. They may also diminish other beneficial pharmacodynamic effects desired for the treatment of CHF. The effects are likely dose-related. In adults, 100 mg doses aspirin appear to cause no problems, whereas 300 mg doses appear to significantly affect ACE Inhibitor efficacy."
+            },
+            {
+              "interactionConcept": [
+                {
+                  "minConceptItem": {
+                    "rxcui": "1191",
+                    "name": "Aspirin",
+                    "tty": "IN"
+                  },
+                  "sourceConceptItem": {
+                    "id": "DB00945,APRD00264,EXPT00475",
+                    "name": "Acetylsalicylic acid",
+                    "url": "http://www.drugbank.ca/drugs/DB00945#interactions"
+                  }
+                },
+                {
+                  "minConceptItem": {
+                    "rxcui": "1546022",
+                    "name": "Lisinopril Anhydrous",
+                    "tty": "PIN"
+                  },
+                  "sourceConceptItem": {
+                    "id": "DB00722,APRD00560",
+                    "name": "Lisinopril",
+                    "url": "http://www.drugbank.ca/drugs/DB00722#interactions"
+                  }
+                }
+              ],
+              "severity": "N/A",
+              "description": "May diminish the antihypertensive effect of ACE Inhibitors. They may also diminish other beneficial pharmacodynamic effects desired for the treatment of CHF. The effects are likely dose-related. In adults, 100 mg doses aspirin appear to cause no problems, whereas 300 mg doses appear to significantly affect ACE Inhibitor efficacy."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
