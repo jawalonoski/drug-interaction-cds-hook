@@ -26,7 +26,7 @@ var getCard = function(drugs,interactions)
   }
   if(!interactions.fullInteractionTypeGroup) {
     indicator = "info";
-    summary = "No drug-drug interactions reported.";
+    summary = "No drug-drug interactions found.";
   } else {
     indicator = "danger";
     summary = "Drug-drug interactions found!";
@@ -57,10 +57,12 @@ var getCard = function(drugs,interactions)
   card.part[index].name = "summary";
   card.part[index].valueString = summary;
 
-  index++;
-  card.part.push({});
-  card.part[index].name = "detail";
-  card.part[index].valueString = detail;
+  if(indicator != "info") {
+    index++;
+    card.part.push({});
+    card.part[index].name = "detail";
+    card.part[index].valueString = detail;
+  }
 
   index++;
   card.part.push({});
